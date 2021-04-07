@@ -1,7 +1,7 @@
 class person {
-    constructor(pid,firstName,lastName,age,sex,phone,ubudehe){
+    constructor(pid,id,firstName,lastName,age,sex,phone,ubudehe){
       this.pid = pid;
-     this.id = id,
+     this.id = id;
      this.firstName = firstName;
      this.lastName = lastName;
      this.age = age;
@@ -10,32 +10,26 @@ class person {
      this.ubudehe = ubudehe;
     }
     // seters and geters of my fields
-    set id(id){
-      this.id = id;
-    }
-
-    get id(){
-      return this.id;
-    }
+    
     //first name
-    set firstName(firstName){
-      this.firstName = firstName;
+    set firstname(firstname){
+      this.firstName = firstname;
     }
-    get firstName(){
-      return this.firstName
+    get firstname(){
+      return this.firstname
     }
     //last name
-    set lastName(lastName){
-      this.lastName = lastName;
+    set lastname(lastname){
+      this.lastName = lastname;
     }
-    get lastName(){
-      return this.lastName
+    get lastname(){
+      return this.lastname
     }
     //age
-    set age(age){
+    set age1(age){
       this.age = age;
     }
-    get age(){
+    get age1(){
       return this.age;
     }
     //
@@ -46,28 +40,28 @@ class person {
 
 
 const showName = () =>{
-    var person1 = new person(1,"siborurema","jean jaures",12,"male","0785624824",3);
+    var person1 = new person(1,1,"siborurema","jean jaures",12,"male","0785624824",3);
 
-document.getElementById("p01").innerHTML = person1.name();
+document.getElementById("p01").innerHTML = person1.age1;
 
 }
 
-class visitor extends person{
-  constructor(pid,firstName,lastName,age,phone){
-    super(pid);
+// class visitor extends person{
+//   constructor(pid,firstName,lastName,age,phone){
+//     super(pid);
 
-    this.firstName=firstName;
-  }
-  fullName(){
-    return this.name()+" "+ this.firstName
-  }
-}
+//     this.firstName=firstName;
+//   }
+//   fullName(){
+//     return this.name()+" "+ this.firstName
+//   }
+// }
 
 
-const vis= () =>{
-  let v = new visitor("jimmy");
-  document.getElementById("p01").innerHTML = v.fullName();
-}
+// const vis= () =>{
+//   let v = new visitor("jimmy");
+//   document.getElementById("p01").innerHTML = v.fullName();
+// }
 
 
 
