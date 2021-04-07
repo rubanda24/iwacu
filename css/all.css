@@ -1,0 +1,43 @@
+html,body{
+    padding: auto;
+
+}
+
+header{
+    color: rgb(255, 0, 0);
+    font-size: 2em;
+    text-decoration: underline;
+}
+section article{
+    font-weight: 200;
+    font-size: 1.5em;
+    height: 50px;
+    width: 500px;
+    border: 1px solid rgb(red, green, blue);
+    padding: 50px 30px;
+    margin-top: 300;
+    background-color: yellowgreen;
+   
+}
+footer{
+    font-size: 0.9em;
+    align-items: center;
+    text-align: right;
+    margin-right: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+header,footer{
+    color:rgb(112, 51, 51);
+}
+article:hover, article:hover a {
+    color:blue ;
+    background-color: blueviolet;
+}
+
+article:active{
+    background-color: #111;
+}
+section article #we{
+    box-shadow: 2px 2px 3px yellow;
+    border-radius: 25px;
+}

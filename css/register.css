@@ -1,0 +1,48 @@
+section article {
+    border-radius: 50px;
+    box-shadow: 2px 3px 4px blue;
+    height: 300px;
+    width: 700px;
+    margin: 100px auto;
+    padding: 10px;
+    top: 100px;
+
+}
+footer{
+    margin-bottom: 0;
+}
+aside h1{
+    color: black;
+    font-size: 2em;
+    font-weight: 300;
+}
+#container{
+    position: relative;
+    top: 50px;
+    left: 30px;
+
+}
+#search{
+    color:white;
+    font-weight: 300;
+    background-color: blue;
+    border-radius: 20px;
+    width: auto;
+    font-style: italic;
+    padding: 10px;
+    font-size: 1.5em;
+    border: none;
+    opacity: 0.9px;
+}
+#nid{
+    border-radius: 12px 12px 12px;
+    border-bottom-color:rgb(158, 34, 34);
+    border-bottom: 20px;
+    height: 40px;
+    width: 300px;
+    font-size: 1.5em;
+}
+#search:hover{
+    color: rgb(141, 226, 43);
+    padding: 10px;
+}
