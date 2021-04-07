@@ -1,17 +1,19 @@
-class person {
-    constructor(id,firstName,lastName,age,sex,phone,ubudehe){
-     this.id = id,
-     this.firstName = firstName;
-     this.lastName = lastName;
-     this.age = age;
-     this.sex = sex;
-     this.phone = phone;
-     this.ubudehe = ubudehe;
+class Car {
+    constructor(name, year) {
+      this.name = name;
+      this.year = year;
     }
-    name(){
-        return this.firstName +" "+ this.lastName;
+    age(x) {
+      return x - this.year;
     }
-}
-
-let person1 = new person(1,"siborurema","jean jaures",12,"male","0785624824",3);
-document.getElementById("p01").innerHTML="hi";
+  }
+  
+  const showAge = () =>{
+    let date = new Date();
+    let year = date.getFullYear();
+    
+    let myCar = new Car("Ford", 2014);
+    document.getElementById("p01").innerHTML=
+    "My car is " + myCar.age(year) + " years old.";
+ 
+  }
