@@ -1,0 +1,15 @@
+label{
+    position: relative;
+    left: 6px;
+    top: 6px;
+    color: rgb(32, 12, 12);
+    opacity: 0.9;
+    font-weight: 400;
+    font-style: italic;
+    margin-right: 2px;
+}
+.textinput{
+    position: relative;
+    margin-left: 10px;
+    background-color: blue;
+}

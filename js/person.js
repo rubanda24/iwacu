@@ -1,9 +1,9 @@
 class person {
-    constructor(pid,id,firstName,lastName,age,sex,phone,ubudehe){
+    constructor(pid,id,firstname,lastname,age,sex,phone,ubudehe){
       this.pid = pid;
      this.id = id;
-     this.firstName = firstName;
-     this.lastName = lastName;
+     this.firstname = firstname;
+     this.lastname = lastname;
      this.age = age;
      this.sex = sex;
      this.phone = phone;
@@ -12,17 +12,17 @@ class person {
     // seters and geters of my fields
     
     //first name
-    set firstname(firstname){
-      this.firstName = firstname;
+    set firstName(firstname){
+      this.firstname = firstname;
     }
-    get firstname(){
+    get firstName(){
       return this.firstname
     }
     //last name
-    set lastname(lastname){
-      this.lastName = lastname;
+    set lastName(lastname){
+      this.lastname = lastname;
     }
-    get lastname(){
+    get lastName(){
       return this.lastname
     }
     //age
@@ -39,29 +39,37 @@ class person {
 }
 
 
-const showName = () =>{
-    var person1 = new person(1,1,"siborurema","jean jaures",12,"male","0785624824",3);
 
-document.getElementById("p01").innerHTML = person1.age1;
+const showName = () =>{
+  var firstname1 = document.getElementById("firstname").Value;
+  var lastname1 = document.getElementById("lastname").Value;
+  var age1 = document.getElementById("age").Value;
+  var sex1= document.getElementById("sex").Value;
+  var phone1 = document.getElementById("phone").Value;
+  var ubudehe1 = document.getElementById("ubudehe").Value;
+   // var person1 = new person(1,1,firstname1,lastname1,age1,sex1,phone1,ubudehe1);
+    var person1 = new person(1,1,"rubanda","shyashya",12,"m",089,6);
+
+console.log(person1.name());
 
 }
 
-// class visitor extends person{
-//   constructor(pid,firstName,lastName,age,phone){
-//     super(pid);
+class visitor extends person{
+  constructor(pid,firstName,lastName,age,phone){
+    super(pid);
 
-//     this.firstName=firstName;
-//   }
-//   fullName(){
-//     return this.name()+" "+ this.firstName
-//   }
-// }
+    this.firstName=firstName;
+  }
+  fullName(){
+    return this.name()+" "+ this.firstName
+  }
+}
 
 
-// const vis= () =>{
-//   let v = new visitor("jimmy");
-//   document.getElementById("p01").innerHTML = v.fullName();
-// }
+const vis= () =>{
+  let v = new visitor("jimmy");
+  document.getElementById("p01").innerHTML = v.fullName();
+}
 
 
 
@@ -86,4 +94,9 @@ class Car {
     document.getElementById("p01").innerHTML=
     "My car is " + myCar.age(year) + " years old.";
  
+  }
+
+  //helloworld
+  const hello = ()=>{
+    alert("uraho jado");
   }

@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <title>Person</title>
         <link rel="stylesheet"  type="text/css" href="../css/register.css">
+        <link rel="stylesheet"  type="text/css" href="../css/person.css">
         <script src="../js/person.js"></script>
 
     </head>
@@ -15,6 +16,7 @@
        <!-- <nav>This is  a good Place for You!</nav>  -->
        <section>
            <article>
+           <form action="#" method="get">
             <label for="firstname">Enter firstname</label>
             <input type="text" id="firstname"><br>
             <label for="lastname">Enter Lastname</label>
@@ -27,11 +29,12 @@
             <input type="text" id="sex"><br>
             <label for="phone">Enter Phone</label>
             <input type="text" id="phone"><br>
-            <label for="lastname">Enter ubudehe</label>
+            <label for="ubudehe">Enter ubudehe</label>
             <input type="text" id="ubudehe"><br><br>
 
-            <button onclick=""> send Data</button>
-
+            <button onclick="showName()" type="submit"> send Data</button>
+           </form>
+           <button onclick="hello()">say hello</button>
            </article>
        </section>
 
