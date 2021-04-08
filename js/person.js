@@ -53,22 +53,28 @@ const showName = () =>{
 console.log(person1.name());
 
 }
-
+// visitor inherit person
 class visitor extends person{
-  constructor(pid,firstName,lastName,age,phone){
-    super(pid);
+  constructor(firstname,lastname,age,phone){
+    super(firstname);
 
-    this.firstName=firstName;
+    this.firstname = firstname;
+    this.lastname = lastname;
+    this.age = age;
+    this.phone = phone;
+
   }
+  // AGE CALL
+  
   fullName(){
-    return this.name()+" "+ this.firstName
+    return this.name()+" "+ this.phone;
   }
 }
 
 
-const vis= () =>{
-  let v = new visitor("jimmy");
-  document.getElementById("p01").innerHTML = v.fullName();
+const vis = () =>{
+  let v = new visitor("jimmy","maruwa",12,089898);
+  console.log(v.fullName());
 }
 
 
@@ -96,7 +102,4 @@ class Car {
  
   }
 
-  //helloworld
-  const hello = ()=>{
-    alert("uraho jado");
-  }
+ 
