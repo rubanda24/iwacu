@@ -1,6 +1,6 @@
 class person {
-    constructor(pid,id,firstname,lastname,age,sex,phone,ubudehe){
-      this.pid = pid;
+    constructor(pid,id,firstname,lastname,age,sex,phone,ubudehe,zone,prison){
+     this.pid = pid;
      this.id = id;
      this.firstname = firstname;
      this.lastname = lastname;
@@ -8,6 +8,8 @@ class person {
      this.sex = sex;
      this.phone = phone;
      this.ubudehe = ubudehe;
+     this.zone = zone;
+     this.prison = prison;
     }
     // seters and geters of my fields
     
@@ -32,9 +34,38 @@ class person {
     get age1(){
       return this.age;
     }
+    //set and get zone
+    set Zone(zone1){
+     this.zone = zone1;
+    }
+    get Zone(){
+      return this.zone;
+    }
+    // set and get ubudehe
+
+    set Ubudehe (ubudehe1){
+     this.ubudehe= ubudehe1;
+    }
+    get Ubudehe(){
+      return this.ubudehe;
+    }
+    // set and get prison
+    
+    set Prison (prison1){
+      this.prison= prison1;
+     }
+     get Prison(){
+       return this.prison;
+     }
     //
-    name(){
-        return this.firstName +" "+ this.lastName+" "+ this.age;
+
+    myGreetings(hello){
+      
+      return hello;
+    }
+    name(myGreeting){
+      myGreeting("hi");
+        return this.myGreetings()+" "+ this.firstName +" "+ this.lastName+" "+ this.age;
     }
 }
 
@@ -50,7 +81,7 @@ const showName = () =>{
    // var person1 = new person(1,1,firstname1,lastname1,age1,sex1,phone1,ubudehe1);
     var person1 = new person(1,1,"rubanda","shyashya",12,"m",089,6);
 
-console.log(person1.name());
+console.log(person1.name(myGreetings));
 
 }
 // visitor inherit person
@@ -102,4 +133,6 @@ class Car {
  
   }
 
+
+  
  
