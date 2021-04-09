@@ -59,13 +59,12 @@ class person {
      }
     //
 
-    myGreetings(hello){
+    secondName(){
       
-      return hello;
+      return "hello";
     }
-    name(myGreeting){
-      myGreeting("hi");
-        return this.myGreetings()+" "+ this.firstName +" "+ this.lastName+" "+ this.age;
+    name(){
+        return this.secondName()+" "+ this.firstName +" "+ this.lastName+" "+ this.age;
     }
 }
 
@@ -81,7 +80,7 @@ const showName = () =>{
    // var person1 = new person(1,1,firstname1,lastname1,age1,sex1,phone1,ubudehe1);
     var person1 = new person(1,1,"rubanda","shyashya",12,"m",089,6);
 
-console.log(person1.name(myGreetings));
+console.log(person1.name());
 
 }
 // visitor inherit person
