@@ -104,7 +104,7 @@ class visitor extends person{
 
 const vis = () =>{
   let v = new visitor("jimmy","maruwa",12,089898);
-  console.log(v.fullName());
+ document.getElementById("demo").innerHTML = v.fullName();
 }
 
 
@@ -131,6 +131,49 @@ class Car {
     "My car is " + myCar.age(year) + " years old.";
  
   }
+
+  // callbacks and asynchronous
+  function display(a){
+    console.log(a);
+  }
+  function calculate(b,c,displayer){
+    let sum = b+c;
+    displayer(sum);
+  }
+  calculate(1,2,display);
+
+  //show the value entered by user
+  function show(firstname1){
+    firstname1 = document.getElementById("firstname1").Value;
+  console.log("my names is Rubanda");
+  }
+  function show1(firstname1){
+    firstname1 = document.getElementById("firstname1").Value;
+  console.log("also shyashya");
+  }
+  function delay(){
+    setInterval(show,3000);
+    setTimeout(show1,5000);
+  }
+
+  //promises
+  function check(some){
+  
+    document.getElementById("demo").innerHTML= some;
+    }
+    let myPromise = new Promise(function(myResolve,myReject){
+        var a =document.getElementById("firstname1").value;
+        //var a1 = Number(a);
+        if(!isNaN(a)){
+            myResolve("is a number");
+        } else{
+            myReject("no a number");
+        } 
+    });
+    myPromise.then(
+        function(value){check(value);},
+        function(error){ check(error);}
+    );
 
 
   

@@ -13,13 +13,13 @@
         
         
         <!-- starting of the PAGE-->
-       <header>iwacu.com</header>
+       <header>SHYASHYA.com</header>
        <!-- <nav>This is  a good Place for You!</nav>  -->
        <section>
            <article>
            <form action="#" method="get">
             <label for="firstname">Enter firstname</label>
-            <input type="text" id="firstname"><br>
+            <input type="text" id="firstname1" value="2" ><br>
             <label for="lastname">Enter Lastname</label>
             <input type="text" id="lastname"><br>
             <label for="nid">National Id</label>
@@ -33,12 +33,34 @@
             <label for="ubudehe">Enter ubudehe</label>
             <input type="text" id="ubudehe"><br><br>
 
-            <button onclick="showName()" type="submit"> send Data</button>
+            <button onclick=""  id="btn"> send Data</button>
+            <button onclick="check()"  id="btn1"> show</button>
            </form>
            <p id="demo"></p>
            </article>
        </section>
 
+<!-- <script>
+    function myDisplayer(some) {
+      document.getElementById("demo").innerHTML = some;
+    }
+    
+    function getFile(myCallback) {
+      let req = new XMLHttpRequest();
+      req.open('GET', "../html/myimage.html");
+      req.onload = function() {
+        if (req.status == 200) {
+          myCallback(this.responseText);
+        } else {
+          myCallback("Error: " + req.status);
+        }
+      }
+      req.send();
+    }
+    
+    getFile(myDisplayer); 
+    </script> -->
+    
         
         </body>
         </html>
