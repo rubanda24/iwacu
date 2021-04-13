@@ -149,6 +149,118 @@ var regAdd = /^(?=.*\d)[a-zA-Z\s\d\/]+$/;
 </nav>
 <br>
 <div class="container">
+  <div class="row">
+                <div class="col">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="household"
+                    placeholder="Household Names"
+                    name="pasword"
+                  />
+                </div>
+                <div class="col">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Household Names"
+                    name="household_name"
+                  />
+                </div>
+  </div> 
+   <!--beneficiary info  -->
+   <br>
+   <div class="row">
+                <div class="col">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="pid"
+                    placeholder="Patient National ID"
+                    name="pid"
+                  />
+                </div>
+                <div class="col">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Patient Names"
+                    name="pname"
+                  />
+                </div>
+  </div>  
+  <!-- age and phone -->
+  <br>
+  <div class="row">
+                <div class="col">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="age"
+                    placeholder="Enter Age"
+                    name="age"
+                  />
+                </div>
+                <div class="col">
+                    <input required type="text" name="phonenumber" 
+                    id="phone" class="form-control phone" maxlength="28"
+                    onkeyup="validatephone(this);" placeholder="Enter Phone Number"/> 
+                </div>
+                <div class="col">
+                      <select class="form-control" id="ubudehe" name="ubudehe">
+                      <option>Ubudehe</option>
+                      <option value="a">A</option>
+                      <option value="b">B</option>
+                     <option value="c">c</option>
+                     <option value="d">D</option>
+                     <option value="f">F</option>
+                      </select>
+                </div>
+  </div>
+  <!--catchment area, gender, prisoner  -->
+  <br>
+  <div class="row">
+                <div class="col">
+                  <div class="form-check-inline">
+                  <label class="form-check-label" for="check1">
+                  <input type="checkbox" class="form-check-input" id="check1" name="vehicle1" value="something" checked>Option 1
+                  </label>
+                  </div>
+                  <div class="form-check-inline">
+                  <label class="form-check-label" for="check2">
+                  <input type="checkbox" class="form-check-input" id="check2" name="vehicle2" value="something">Option 2
+                  </label>
+                  </div>
+                 <div class="form-check-inline">
+                 <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" disabled>Option 3
+               </label>
+    </div>
+                </div>
+                <div class="col">
+                    <input required type="text" name="phonenumber" 
+                    id="phone" class="form-control phone" maxlength="28"
+                    onkeyup="validatephone(this);" placeholder="Enter Phone Number"/> 
+                </div>
+                <div class="col">
+                      <div class="form-check-inline">
+                      <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="optradio">Option 1
+                     </label>
+                     </div>
+                   <div class="form-check-inline">
+                   <label class="form-check-label">
+                  <input type="radio" class="form-check-input" name="optradio">Option 2
+                 </label>
+                 </div>
+                 <div class="form-check-inline disabled">
+                 <label class="form-check-label">
+                  <input type="radio" class="form-check-input" name="optradio" disabled>Option 3
+                </label>
+                </div>
+                </div>
+  </div>
+  
 	<div class="row">
         <div class="col-md-12">
             <form action="" method="post" id="fileForm" role="form">
@@ -171,11 +283,11 @@ var regAdd = /^(?=.*\d)[a-zA-Z\s\d\/]+$/;
                         <div id="errLast"></div>
             </div>
 
-            <div class="form-group">
+            <!-- <div class="form-group">
                 <label for="email"><span class="req">* </span> Email Address: </label> 
                     <input class="form-control" required type="text" name="email" id = "email"  onchange="email_validate(this.value);" />   
                         <div class="status" id="status"></div>
-            </div>
+            </div> -->
 
             <div class="form-group">
                 <label for="username"><span class="req">* </span> User name:  <small>This will be your login user name</small> </label> 
